@@ -7,7 +7,7 @@ pipeline {
                 echo 'Starting the build Stage'
                 echo '===================================='
                     javac HelloWorld.java
-                    javac HelloWorld
+                    java HelloWorld
                 echo '===================================='
                 echo 'Build Stage completed successfully'
             }
