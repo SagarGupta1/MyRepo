@@ -6,8 +6,10 @@ pipeline {
             steps {
                 echo 'Starting the build Stage'
                 echo '===================================='
+                sh '''#!/bin/bash
                     javac HelloWorld.java
                     java HelloWorld
+                 '''
                 echo '===================================='
                 echo 'Build Stage completed successfully'
             }
