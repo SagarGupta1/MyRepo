@@ -10,6 +10,9 @@ pipeline {
         }
         stage('Build') { 
             steps {
+                emailext body: 'Test Message',
+    subject: 'Test Subject',
+    to: 'sagar786gupta.207@gmail.com'
                 echo 'Starting the build Stage'
                 echo '===================================='
                 sh '''#!/bin/bash
